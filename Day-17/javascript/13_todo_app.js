@@ -10,7 +10,7 @@ while (true) {
         // for (task of todo) {
         //     console.log(task);
         // }
-        for(let i=0; i<=todo.length;i++){
+        for (let i = 0; i <= todo.length; i++) {
             console.log(i, todo[i]);
         }
         console.log("-------------");
@@ -20,12 +20,11 @@ while (true) {
         todo.push(task);
         console.log("task added");
     }
-    else if(req=="delete") { 
-        let idx= prompt("please enter your delete number:");
-        todo.splice(idx,1);
+    else if (req == "delete") {
+        let idx = prompt("please enter your delete number:");
+        todo.splice(idx, 1);
         console.log("task delete");
-    }else 
-    {
+    } else {
         console.log("wrong request:");
     }
     req = prompt("please enter your request");
